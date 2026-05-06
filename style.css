@@ -1,0 +1,118 @@
+body{
+  margin:0;
+  font-family:Arial;
+  background:#111;
+  color:white;
+}
+
+header{
+  text-align:center;
+  padding:40px;
+  background:#1d1d1d;
+}
+
+nav{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:15px;
+  background:#222;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+}
+
+.hero{
+  text-align:center;
+  padding:80px 20px;
+}
+
+.cards{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  padding:40px;
+  flex-wrap:wrap;
+}
+
+.card{
+  background:#222;
+  padding:20px;
+  border-radius:10px;
+  width:300px;
+}
+footer{
+  text-align:center;
+  padding:20px;
+}
+.loaded{
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+.card{
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s;
+}
+
+.card.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.cursor-glow{
+  width:20px;
+  height:20px;
+  background:white;
+  border-radius:50%;
+  position:fixed;
+  pointer-events:none;
+  mix-blend-mode:difference;
+  transform:translate(-50%,-50%);
+  z-index:9999;
+}
+
+.ticker{
+  background:#00ff88;
+  color:black;
+  padding:10px;
+  text-align:center;
+  font-weight:bold;
+}
+
+.particle{
+  position:fixed;
+  width:5px;
+  height:5px;
+  background:white;
+  border-radius:50%;
+  top:-10px;
+  animation: float linear infinite;
+}
+
+@keyframes float{
+  to{
+    transform:translateY(110vh);
+  }
+}
+
+.live-clock{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#222;
+  padding:10px 15px;
+  border-radius:10px;
+  font-size:14px;
+}
+
+.pulse{
+  filter:brightness(1.1);
+}
