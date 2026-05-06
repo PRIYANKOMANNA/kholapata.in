@@ -1,7 +1,9 @@
 # 🌿 Khola Pata
 
 ## Bengali Digital Media & Product Ecosystem
-
+![GitHub Pages](https://img.shields.io/badge/Hosted-GitHub%20Pages-black)
+![Status](https://img.shields.io/badge/Status-Live-success)
+![Made in Bengal](https://img.shields.io/badge/Made%20in-Bengal-green)
 Khola Pata is a modern Bengali digital platform focused on:
 
 - 📰 Viral News
